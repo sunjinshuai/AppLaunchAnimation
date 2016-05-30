@@ -10,11 +10,12 @@
 		324E5A941CFC492300ACDAEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E5A931CFC492300ACDAEB /* main.m */; };
 		324E5A971CFC492300ACDAEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E5A961CFC492300ACDAEB /* AppDelegate.m */; };
 		324E5A9A1CFC492300ACDAEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E5A991CFC492300ACDAEB /* ViewController.m */; };
-		324E5A9D1CFC492300ACDAEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324E5A9B1CFC492300ACDAEB /* Main.storyboard */; };
-		324E5A9F1CFC492300ACDAEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324E5A9E1CFC492300ACDAEB /* Assets.xcassets */; };
 		324E5AA21CFC492300ACDAEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324E5AA01CFC492300ACDAEB /* LaunchScreen.storyboard */; };
 		324E5AAD1CFC492300ACDAEB /* AppLaunchAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E5AAC1CFC492300ACDAEB /* AppLaunchAnimationTests.m */; };
 		324E5AB81CFC492300ACDAEB /* AppLaunchAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E5AB71CFC492300ACDAEB /* AppLaunchAnimationUITests.m */; };
+		324E5AC71CFC495000ACDAEB /* LaunchAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E5AC61CFC495000ACDAEB /* LaunchAnimationTool.m */; };
+		324E5AC91CFC498700ACDAEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324E5AC81CFC498700ACDAEB /* Images.xcassets */; };
+		324E5ACB1CFC4A0000ACDAEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324E5ACA1CFC4A0000ACDAEB /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,6 @@
 		324E5A961CFC492300ACDAEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		324E5A981CFC492300ACDAEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		324E5A991CFC492300ACDAEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		324E5A9C1CFC492300ACDAEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		324E5A9E1CFC492300ACDAEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324E5AA11CFC492300ACDAEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		324E5AA31CFC492300ACDAEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324E5AA81CFC492300ACDAEB /* AppLaunchAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLaunchAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +50,10 @@
 		324E5AB31CFC492300ACDAEB /* AppLaunchAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLaunchAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324E5AB71CFC492300ACDAEB /* AppLaunchAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppLaunchAnimationUITests.m; sourceTree = "<group>"; };
 		324E5AB91CFC492300ACDAEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324E5AC51CFC495000ACDAEB /* LaunchAnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAnimationTool.h; sourceTree = "<group>"; };
+		324E5AC61CFC495000ACDAEB /* LaunchAnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAnimationTool.m; sourceTree = "<group>"; };
+		324E5AC81CFC498700ACDAEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		324E5ACA1CFC4A0000ACDAEB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +104,16 @@
 		324E5A911CFC492300ACDAEB /* AppLaunchAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				324E5AC51CFC495000ACDAEB /* LaunchAnimationTool.h */,
+				324E5AC61CFC495000ACDAEB /* LaunchAnimationTool.m */,
 				324E5A951CFC492300ACDAEB /* AppDelegate.h */,
 				324E5A961CFC492300ACDAEB /* AppDelegate.m */,
 				324E5A981CFC492300ACDAEB /* ViewController.h */,
 				324E5A991CFC492300ACDAEB /* ViewController.m */,
-				324E5A9B1CFC492300ACDAEB /* Main.storyboard */,
-				324E5A9E1CFC492300ACDAEB /* Assets.xcassets */,
 				324E5AA01CFC492300ACDAEB /* LaunchScreen.storyboard */,
+				324E5ACA1CFC4A0000ACDAEB /* LaunchScreen.xib */,
 				324E5AA31CFC492300ACDAEB /* Info.plist */,
+				324E5AC81CFC498700ACDAEB /* Images.xcassets */,
 				324E5A921CFC492300ACDAEB /* Supporting Files */,
 			);
 			path = AppLaunchAnimation;
@@ -244,8 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				324E5AA21CFC492300ACDAEB /* LaunchScreen.storyboard in Resources */,
-				324E5A9F1CFC492300ACDAEB /* Assets.xcassets in Resources */,
-				324E5A9D1CFC492300ACDAEB /* Main.storyboard in Resources */,
+				324E5ACB1CFC4A0000ACDAEB /* LaunchScreen.xib in Resources */,
+				324E5AC91CFC498700ACDAEB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324E5A9A1CFC492300ACDAEB /* ViewController.m in Sources */,
+				324E5AC71CFC495000ACDAEB /* LaunchAnimationTool.m in Sources */,
 				324E5A971CFC492300ACDAEB /* AppDelegate.m in Sources */,
 				324E5A941CFC492300ACDAEB /* main.m in Sources */,
 			);
@@ -308,14 +314,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		324E5A9B1CFC492300ACDAEB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				324E5A9C1CFC492300ACDAEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		324E5AA01CFC492300ACDAEB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,7 +411,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AppLaunchAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.AppLaunchAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +424,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AppLaunchAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.AppLaunchAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
