@@ -51,8 +51,7 @@ static NSInteger const imageViewsborderOffset = 150;
         CGAffineTransform translationTransform = CGAffineTransformMakeTranslation(randomTranslationValueX, randomTranslationValueY);
         
         CGFloat randomScaleTransformValue = 1.0f;
-        
-        
+
         CGAffineTransform scaleTransform = CGAffineTransformMakeScale(randomScaleTransformValue, randomScaleTransformValue);
         
         backGroundImageView.transform = CGAffineTransformConcat(scaleTransform, translationTransform);
@@ -62,7 +61,6 @@ static NSInteger const imageViewsborderOffset = 150;
         [launchView removeFromSuperview];
 
     }];
-    
 }
 
 @end
