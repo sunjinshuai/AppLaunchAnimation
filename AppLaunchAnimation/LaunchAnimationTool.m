@@ -19,7 +19,6 @@ static NSInteger const imageViewsborderOffset = 150;
 
 + (void)showLaunchAnimationViewToWindow
 {
-    
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     
     UIView *launchView = [[NSBundle mainBundle] loadNibNamed:@"LaunchScreen" owner:nil options:nil].firstObject;
@@ -41,8 +40,7 @@ static NSInteger const imageViewsborderOffset = 150;
     
     [launchView addSubview:backGroundImageView];
     [launchView addSubview:iconImageView];
-    
-    
+
     [UIView animateWithDuration:1.8f delay:0.0f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionCurveLinear animations:^{
         
         NSInteger randomTranslationValueX = imageViewsborderOffset - 100;
